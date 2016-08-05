@@ -1,0 +1,143 @@
+.form-a {
+    // background-color: $form-a-border;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-a__basic {
+    font-family: 'PT Sans', sans-serif;
+    color: $form-a-text;
+    background-color: $form-a-background;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid $form-a-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    width: 350px;
+    margin: 10px;
+    
+    h4 {
+        font-size: 23px;
+        border-bottom: 1px solid $form-a-inner-border;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .blah a {
+        
+        float: right;
+    }
+    
+    
+    form {
+    
+        border-bottom: 1px solid $form-a-inner-border;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        
+        // input {
+        // border: na;
+        // padding: 10px 0px;
+        // }
+    
+    }
+    
+   .form-a__field {
+       border: 1px solid $form-a-inner-border;
+       font-size: 14px;
+       margin: 6px 0px;
+       padding: 6px;
+       width: 100%;
+   }
+   
+//   .form-a__password {
+//       @extend .form-a__username;
+//   }
+   
+   .form-a__submit {
+       background-color: $form-a-button-link;
+       color: $form-a-text;
+       font-size: 20px;
+       padding: 4px;
+       width: 100%;
+       border: none;
+       
+   }
+   
+   a {
+       text-decoration: na;
+       color: $form-a-button-link;
+       
+   }
+}
+
+.style-buttons {
+    
+}
+
+
+
+
+
+.style-class-one {
+    background-color: $form-b-background;
+    font-family: 'Quattrocento', serif;
+    color: $form-b-text;
+    background-color: $form-b-background;
+    border: 1px solid $form-b-border;
+    
+    h4 {
+        border-bottom: 1px solid $form-b-inner-border;
+    }
+
+    form {
+        border-bottom: 1px solid $form-b-inner-border;
+
+    }
+    
+   .form-a__field {
+       border: 1px solid $form-b-inner-border;
+   }
+   
+//   .form-a__password {
+//       @extend .form-a__username;
+//   }
+   
+   .form-a__submit {
+       background-color: $form-b-button-link;
+       color: $form-b-text;
+   }
+   
+   a {
+       color: $form-b-button-link;
+       
+   }
+
+}
+
+.style-class-two {
+    background-color: green;
+    
+    color: white;
+    font-family: "Courier New", Courier, monospace
+}
+
+.style-class-three {
+    background-color: purple;
+    color: orange;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+// .style-class-three {
+//     background-color: green;
+// }
+
+// .style-class-b {
+//     background-color: orange;
+// }
+// .style-class {
+//     background-color: red;
+// }
