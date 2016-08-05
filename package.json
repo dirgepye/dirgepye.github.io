@@ -1,0 +1,31 @@
+{
+  "name": "shawn-stenhouse-portfolio",
+  "version": "1.0.0",
+  "description": "\"shawn stenhouse's portfolio\"",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirgepye/dirgepye.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "design",
+    "development",
+    "stenhouse"
+  ],
+  "author": "shawn stenhouse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dirgepye/dirgepye.github.io/issues"
+  },
+  "homepage": "https://github.com/dirgepye/dirgepye.github.io#readme"
+}
