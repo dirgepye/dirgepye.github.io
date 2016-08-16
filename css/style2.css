@@ -1,0 +1,242 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu+Mono";
+* {
+  font-family: 'Asap', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+#pie-holder {
+  position: relative;
+  width: 610px;
+  height: 610px;
+  margin: 60px auto 0;
+}
+
+.name {
+  background-color: white;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 200px;
+  top: 400px;
+}
+
+.name p {
+  width: 100px;
+  margin: 0 auto;
+  color: orange;
+}
+
+text.inner-circle {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.image_style {
+  opacity: 0.4;
+}
+
+.arc:hover {
+  opacity: 0.85;
+}
+
+svg {
+  opacity: 0;
+}
+
+@-moz-keyframes rotatebox /*--for firefox--*/ {
+  from {
+    -moz-transform: rotate(18deg);
+  }
+  to {
+    -moz-transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rotatebox /*--for webkit--*/ {
+  from {
+    -webkit-transform: rotate(18deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+.title-container {
+  position: absolute;
+  width: 40px;
+  margin: 0 auto;
+  z-index: -1000;
+  height: 299px;
+  left: 280px;
+  font-size: 0;
+  transform-origin: bottom center;
+  /* section animation features */
+  /* WORK TITLE ANIMATION */
+  /* CONTACT TITLE ANIMATION */
+  /* ABOUT WORK SECTION */
+}
+.title-container h3 span {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 50px;
+  color: #555;
+  position: absolute;
+  margin: 0 auto;
+  height: 118%;
+  top: -50px;
+  left: 5px;
+  transform-origin: bottom center;
+  text-transform: uppercase;
+}
+@-webkit-keyframes rotatework {
+  from {
+    -webkit-transform: rotate(203deg);
+  }
+  to {
+    -webkit-transform: rotate(223deg);
+  }
+}
+@-webkit-keyframes unrotatework {
+  from {
+    -webkit-transform: rotate(223deg);
+  }
+  to {
+    -webkit-transform: rotate(203deg);
+  }
+}
+@-moz-keyframes rotatework {
+  from {
+    -moz-transform: rotate(203deg);
+  }
+  to {
+    -moz-transform: rotate(223deg);
+  }
+}
+@-moz-keyframes unrotatework {
+  from {
+    -moz-transform: rotate(223deg);
+  }
+  to {
+    -moz-transform: rotate(203deg);
+  }
+}
+@-webkit-keyframes rotatecontact {
+  from {
+    -webkit-transform: rotate(68deg);
+  }
+  to {
+    -webkit-transform: rotate(88deg);
+  }
+}
+@-webkit-keyframes unrotatecontact {
+  from {
+    -webkit-transform: rotate(88deg);
+  }
+  to {
+    -webkit-transform: rotate(68deg);
+  }
+}
+@-moz-keyframes rotatecontact {
+  from {
+    -moz-transform: rotate(68deg);
+  }
+  to {
+    -moz-transform: rotate(88deg);
+  }
+}
+@-moz-keyframes unrotatecontact {
+  from {
+    -moz-transform: rotate(88deg);
+  }
+  to {
+    -moz-transform: rotate(68deg);
+  }
+}
+@-webkit-keyframes rotateabout {
+  from {
+    -webkit-transform: rotate(317deg);
+  }
+  to {
+    -webkit-transform: rotate(337deg);
+  }
+}
+@-webkit-keyframes unrotateabout {
+  from {
+    -webkit-transform: rotate(337deg);
+  }
+  to {
+    -webkit-transform: rotate(317deg);
+  }
+}
+@-moz-keyframes rotateabout {
+  from {
+    -moz-transform: rotate(317deg);
+  }
+  to {
+    -moz-transform: rotate(337deg);
+  }
+}
+@-moz-keyframes unrotateabout {
+  from {
+    -moz-transform: rotate(337deg);
+  }
+  to {
+    -moz-transform: rotate(317deg);
+  }
+}
+.title-container .about-title {
+  margin: 0;
+}
+.title-container .about-title .char2 {
+  transform: rotate(5deg);
+}
+.title-container .about-title .char3 {
+  transform: rotate(10deg);
+}
+.title-container .about-title .char4 {
+  transform: rotate(15deg);
+}
+.title-container .about-title .char5 {
+  transform: rotate(20deg);
+}
+.title-container .contact-title .char2 {
+  transform: rotate(5deg);
+}
+.title-container .contact-title .char3 {
+  transform: rotate(10deg);
+}
+.title-container .contact-title .char4 {
+  transform: rotate(15deg);
+}
+.title-container .contact-title .char5 {
+  transform: rotate(20deg);
+}
+.title-container .contact-title .char6 {
+  transform: rotate(25deg);
+}
+.title-container .contact-title .char7 {
+  transform: rotate(30deg);
+}
+.title-container .work-title .char2 {
+  transform: rotate(5deg);
+}
+.title-container .work-title .char3 {
+  transform: rotate(10deg);
+}
+.title-container .work-title .char4 {
+  transform: rotate(15deg);
+}
+
+.work-container {
+  opacity: 0;
+}
+
+.contact-container {
+  opacity: 0;
+}
+
+.about-container {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style2.css.map */

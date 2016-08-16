@@ -6,26 +6,36 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    compass: false,
+                    compass: true,
                     style: 'expanded'
                 },
                 files: {
-                    'css/style.css': 'sass/style.scss'
+                    'css/style.css': 'scss/style.scss'
                 }
             }
         },
-
+        sass: {
+            dist: {
+                options: {
+                    compass: true,
+                    style: 'expanded'
+                },
+                files: {
+                    'css/style2.css': "scss/style2.scss"
+                }
+            }
+        },
         cssmin: {
             dist: {
                 files: {
-                    'build/style.css': 'css/style.css'
+                    'css/style.min.css': 'css/style.css'
                 }
             }
         },
 
         watch: {
             sass: {
-                files: ['sass/**/*.scss'],
+                files: ['scss/**/*.scss'],
                 tasks: ['sass']
             },
             styles: {
@@ -37,7 +47,8 @@ module.exports = function(grunt) {
     // load plugins
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     //defaluts
-    grunt.registerTask('default', ['watch', 'sass', 'cssmin']);
+    grunt.registerTask('default', ['watch', 'sass', 'cssmin', 'compass']);
 };

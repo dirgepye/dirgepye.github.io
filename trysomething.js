@@ -54,37 +54,42 @@ function randDirect() {
     return direction;
 }
 
+function removeCover() {
+    $(".cover").css("display","none");
+}
+
 function bgFunction() {
     console.log("fnewafe")
     TweenLite.to(one, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(two, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(three, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(four, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(five, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(six, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(seven, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(eight, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(nine, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
     });
     TweenLite.to(ten, randSpeed(), {
-        bottom: randDirect(),
+        left: randDirect(),
+        onComplete: removeCover
     })
 }
 
