@@ -19,6 +19,12 @@
     "type": "git",
     "url": "git+https://github.com/dirgepye/dirgepye.github.io.git"
   },
+  "keywords": [
+    "web",
+    "design",
+    "development",
+    "stenhouse"
+  ],
   "author": "shawn stenhouse",
   "license": "ISC",
   "bugs": {
