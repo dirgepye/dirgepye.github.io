@@ -12,7 +12,7 @@
   position: relative;
   width: 610px;
   height: 610px;
-  margin: 60px auto 0;
+  margin: 45px auto 0;
 }
 
 .name {
@@ -33,12 +33,33 @@
 
 text.inner-circle {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 
+text.inner-circle-sub {
+  font-style: italic;
+}
+
 .image_style {
-  opacity: 0.4;
+  opacity: 0.45;
+}
+
+#about-icon {
+  opacity: 0.45;
+  transform-origin: center;
+  transform: rotate(300deg);
+  
+}
+
+#work-icon {
+  opacity: 0.45;
+}
+
+#contact-icon {
+  opacity: 0.45;
+  transform-origin: center;
+  transform: rotate(59deg)
 }
 
 
@@ -73,11 +94,12 @@ svg {
     width: 40px;
     margin: 0 auto;
     z-index: -1000;
-    height: 299px;
-    left: 280px;
-    //border: solid 1px black;
+    height: 307px;
+    left: 290px;
+    top: 4px;
     font-size: 0;
     transform-origin: bottom center;
+    //border: 1px solid black;
 
   	h3 {
   	 // font-size: 50px;
@@ -90,10 +112,11 @@ svg {
   	 // transform-origin: bottom center;
   	 // text-transform: uppercase;
   	  //transform: rotate(180deg);
+  	}
   	  
 	  span {
       font-family: 'Ubuntu Mono', monospace;
-      font-size: 50px;
+      font-size: 45px;
       color: #555;
       position: absolute;
       margin: 0 auto;
@@ -227,11 +250,6 @@ svg {
   .char3 {transform: rotate(10deg);}
   .char4 {transform: rotate(15deg);}
   .char5 {transform: rotate(20deg);}
-  // .char1 { transform: rotate(316deg);}
-  // .char2 { transform: rotate(321deg);}
-  // .char3 { transform: rotate(326deg);}
-  // .char4 { transform: rotate(331deg);}
-  // .char5 { transform: rotate(336deg);} 
 }
 
 .contact-title {
@@ -254,42 +272,7 @@ svg {
 }
   	
   	
-}
 
-
-  	   //.contact-title {
-  	   //  transform: rotate(114deg);
-  	   //}
-  	   //.work-title {
-  	   //  transform: rotate(233deg);
-  	   //}
-  	   
-  	   
-  	   
-//   	   .about-title {
-//   .char1 { transform: rotate(336deg);}
-//   .char2 { transform: rotate(341deg);}
-//   .char3 { transform: rotate(346deg);}
-//   .char4 { transform: rotate(351deg);}
-//   .char5 { transform: rotate(356deg);} 
-// }
-
-// .contact-title {
-//   .char1 {transform: rotate(86deg);}
-//   .char2 {transform: rotate(91deg);}
-//   .char3 {transform: rotate(96deg);}
-//   .char4 {transform: rotate(101deg);}
-//   .char5 {transform: rotate(106deg);}
-//   .char6 {transform: rotate(111deg);}
-//   .char7 {transform: rotate(116deg);}
-// }
-
-// .work-title {
-//   .char1 {transform: rotate(221deg);}
-//   .char2 {transform: rotate(226deg);}
-//   .char3 {transform: rotate(231deg);}
-//   .char4 {transform: rotate(236deg);}
-// }
 
 .work-container {
   opacity: 0;
@@ -302,3 +285,4 @@ svg {
 .about-container {
   opacity: 0;
 }
+

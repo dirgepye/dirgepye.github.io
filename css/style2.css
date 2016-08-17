@@ -9,7 +9,7 @@
   position: relative;
   width: 610px;
   height: 610px;
-  margin: 60px auto 0;
+  margin: 45px auto 0;
 }
 
 .name {
@@ -30,12 +30,32 @@
 
 text.inner-circle {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 
+text.inner-circle-sub {
+  font-style: italic;
+}
+
 .image_style {
-  opacity: 0.4;
+  opacity: 0.45;
+}
+
+#about-icon {
+  opacity: 0.45;
+  transform-origin: center;
+  transform: rotate(300deg);
+}
+
+#work-icon {
+  opacity: 0.45;
+}
+
+#contact-icon {
+  opacity: 0.45;
+  transform-origin: center;
+  transform: rotate(59deg);
 }
 
 .arc:hover {
@@ -67,18 +87,15 @@ svg {
   width: 40px;
   margin: 0 auto;
   z-index: -1000;
-  height: 299px;
-  left: 280px;
+  height: 307px;
+  left: 290px;
+  top: 4px;
   font-size: 0;
   transform-origin: bottom center;
-  /* section animation features */
-  /* WORK TITLE ANIMATION */
-  /* CONTACT TITLE ANIMATION */
-  /* ABOUT WORK SECTION */
 }
-.title-container h3 span {
+.title-container span {
   font-family: 'Ubuntu Mono', monospace;
-  font-size: 50px;
+  font-size: 45px;
   color: #555;
   position: absolute;
   margin: 0 auto;
@@ -88,6 +105,9 @@ svg {
   transform-origin: bottom center;
   text-transform: uppercase;
 }
+
+/* section animation features */
+/* WORK TITLE ANIMATION */
 @-webkit-keyframes rotatework {
   from {
     -webkit-transform: rotate(203deg);
@@ -120,6 +140,7 @@ svg {
     -moz-transform: rotate(203deg);
   }
 }
+/* CONTACT TITLE ANIMATION */
 @-webkit-keyframes rotatecontact {
   from {
     -webkit-transform: rotate(68deg);
@@ -152,6 +173,7 @@ svg {
     -moz-transform: rotate(68deg);
   }
 }
+/* ABOUT WORK SECTION */
 @-webkit-keyframes rotateabout {
   from {
     -webkit-transform: rotate(317deg);
@@ -184,46 +206,48 @@ svg {
     -moz-transform: rotate(317deg);
   }
 }
-.title-container .about-title {
+.about-title {
   margin: 0;
 }
-.title-container .about-title .char2 {
+.about-title .char2 {
   transform: rotate(5deg);
 }
-.title-container .about-title .char3 {
+.about-title .char3 {
   transform: rotate(10deg);
 }
-.title-container .about-title .char4 {
+.about-title .char4 {
   transform: rotate(15deg);
 }
-.title-container .about-title .char5 {
+.about-title .char5 {
   transform: rotate(20deg);
 }
-.title-container .contact-title .char2 {
+
+.contact-title .char2 {
   transform: rotate(5deg);
 }
-.title-container .contact-title .char3 {
+.contact-title .char3 {
   transform: rotate(10deg);
 }
-.title-container .contact-title .char4 {
+.contact-title .char4 {
   transform: rotate(15deg);
 }
-.title-container .contact-title .char5 {
+.contact-title .char5 {
   transform: rotate(20deg);
 }
-.title-container .contact-title .char6 {
+.contact-title .char6 {
   transform: rotate(25deg);
 }
-.title-container .contact-title .char7 {
+.contact-title .char7 {
   transform: rotate(30deg);
 }
-.title-container .work-title .char2 {
+
+.work-title .char2 {
   transform: rotate(5deg);
 }
-.title-container .work-title .char3 {
+.work-title .char3 {
   transform: rotate(10deg);
 }
-.title-container .work-title .char4 {
+.work-title .char4 {
   transform: rotate(15deg);
 }
 
@@ -237,6 +261,16 @@ svg {
 
 .about-container {
   opacity: 0;
+}
+
+.farts {
+  position: absolute;
+  z-index: 9999999999;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  margin: 0;
+  font-size: 0;
 }
 
 /*# sourceMappingURL=style2.css.map */

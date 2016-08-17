@@ -47,7 +47,7 @@ $(document).ready(function() {
 	
 	//WORK TITLE ANIMATIONS
 	
-	$("#work").on("mouseover",function() {
+	$("#work").on("mouseenter",function() {
 		$(".work-container").css({
 			"-webkit-animation-name":"rotatework",
         	"-webkit-animation-duration":"0.5s",
@@ -56,7 +56,7 @@ $(document).ready(function() {
 		});
 		$(".work-container").stop().animate({"opacity":"1"},500)
 	});
-	$('#work').on("mouseout", function(){
+	$('#work').on("mouseleave", function(){
 		$(".work-container").css({
 			"-webkit-animation-name":"unrotatework",
         	"-webkit-animation-duration":"0.5s",
@@ -70,7 +70,7 @@ $(document).ready(function() {
 	
 	//CONTACT TITLE ANIMATIONS
 	
-	$("#contact").on("mouseover",function() {
+	$("#contact").on("mouseenter",function() {
 		$(".contact-container").css({
 			"-webkit-animation-name":"rotatecontact",
         	"-webkit-animation-duration":"0.5s",
@@ -79,7 +79,7 @@ $(document).ready(function() {
 		});
 		$(".contact-container").stop().animate({"opacity":"1"},500)
 	});
-	$('#contact').on("mouseout", function(){
+	$('#contact').on("mouseleave", function(){
 		$(".contact-container").css({
 			"-webkit-animation-name":"unrotatecontact",
         	"-webkit-animation-duration":"0.5s",
@@ -93,7 +93,7 @@ $(document).ready(function() {
 	
 	//ABOUT TITLE ANIMATIONS
 	
-	$("#about").on("mouseover",function() {
+	$("#about").on("mouseenter",function() {
 		$(".about-container").css({
 			"-webkit-animation-name":"rotateabout",
         	"-webkit-animation-duration":"0.5s",
@@ -102,7 +102,7 @@ $(document).ready(function() {
 		});
 		$(".about-container").stop().animate({"opacity":"1"},500)
 	});
-	$('#about').on("mouseout", function(){
+	$('#about').on("mouseleave", function(){
 		$(".about-container").css({
 			"-webkit-animation-name":"unrotateabout",
         	"-webkit-animation-duration":"0.5s",
