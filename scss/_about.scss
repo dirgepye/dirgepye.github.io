@@ -1,0 +1,139 @@
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-row {
+    -webkit-flex-direction: row;
+    flex-direction: row;    
+}
+
+@mixin flex-column {
+    -webkit-flex-direction: column;
+    flex-direction: column;    
+}
+
+@mixin flex-row-reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;    
+}
+
+@mixin flex-column-reverse {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;    
+}
+
+$about-bg: #FA603C;
+$about-border: #fa461e;
+
+
+
+
+#about-page {
+    a {
+        background-color: $about-border;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .nav--about {
+        border: 3px solid $about-bg;
+        background-color: #efefef;
+        
+        .hamburger {
+            
+            div {
+                background-color: $about-bg;
+            }
+        }
+    }
+    
+    
+
+    .head {
+        background-color: $about-bg;
+        min-height: 100vh;
+        color: #efefef;
+    
+    
+        .head__content {
+            width: 900px;
+            margin: auto;
+            padding: 6rem 5%;
+            
+            p {
+                font-size: 20px;
+                line-height: 40px;
+                padding: 0 15px;
+                border-right: 2px solid $about-border;
+            }
+        }
+        
+        .head__title {
+            @include flex;
+            justify-content: space-between;
+            border-bottom: 2px solid $about-border;
+            border-left: 2px solid $about-border;
+            padding-right: 10px;
+            padding-left: 8px;
+            margin-bottom: 60px;
+            
+            
+            h1 {
+                font-family: 'Ubuntu Mono', monospace;
+                font-size: 100px;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+                display: inline;
+            }
+            
+            img {
+                width: 100px;
+                height: 100%;
+                opacity: 0.87;
+                margin-top: 6px;
+            }
+        }
+        .head__about {
+            @include flex;
+            @include flex-column;
+            
+            img {
+                width: 300px;
+                height: 300px;
+                border: 3px solid $about-border;
+                border-radius: 50%;
+            }
+        }
+        
+        .head__about--row {
+            @include flex;
+            @include flex-row;
+            margin-bottom: 40px;
+            //padding-right: 15px;
+            p {
+                
+            }
+        }
+    }
+
+    .section--bg-two {
+        background-color: #f2f2f2;
+    }
+    .nav-open--about {
+        background-color: #efefef;
+        border: 3px solid $about-bg;
+        color: $about-bg;
+        
+        ul {
+            
+            a {
+              background-color: transparent;
+              color: $about-bg;
+            }
+        }
+    }
+}

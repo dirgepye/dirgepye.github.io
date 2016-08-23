@@ -1,0 +1,195 @@
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-row {
+    -webkit-flex-direction: row;
+    flex-direction: row;    
+}
+
+@mixin flex-column {
+    -webkit-flex-direction: column;
+    flex-direction: column;    
+}
+
+@mixin flex-row-reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;    
+}
+
+@mixin flex-column-reverse {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;    
+}
+
+//$contact-bg: #F6C54F;
+$contact-bg: #F6C54F;
+$contact-border: #f4b625;
+
+.contact-page {
+    
+    .nav--contact {
+        border: 3px solid $contact-bg;
+        background-color: #efefef;
+        
+        .hamburger {
+            div {
+                background-color: $contact-bg;
+            }
+        }
+    }
+    
+    .nav-open--contact {
+        background-color: #efefef;
+        border: 3px solid $contact-bg;
+        
+        ul {
+            
+            a {
+              background-color: transparent;
+              color: $contact-bg;
+            }
+        }
+    }
+    
+    form {
+        
+        * {
+            outline: none;
+        }
+        @include flex;
+        @include flex-column;
+        width: 100%;
+        padding: 0 15px 15px;
+        margin: auto;
+        //border-bottom: 2px solid $contact-border;
+        border-right: 2px solid $contact-border;
+        
+        input {
+            font-size: 20px;
+            color: #777;
+            padding: 5px;
+            width: 49%;
+        }
+        
+        input:nth-child(1) {
+            margin-right: 10px;
+        }
+        
+        * {
+            border: none;
+        }
+        
+        .form__info {
+            margin-bottom: 20px;
+            
+        }
+        
+        textarea {
+            font-size: 20px;
+            color: #777;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 10px;
+            padding: 5px;
+            resize: none;
+        }
+        
+        input[type=submit] {
+            width: 90px;
+            height: 40px;
+            color: #fff;
+            background-color: $contact-border;
+            border: 2px solid $contact-border;
+            transition: background-color 0.5s;
+            -webkit-transition: background-color 0.5s;
+        }
+        
+        input[type=submit]:hover {
+            background-color: $contact-bg;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        background-color: $contact-border;
+        color: #fff;
+    }
+
+    .head {
+        background-color: $contact-bg;
+        min-height: 100vh;
+        color: #efefef;
+    
+    
+        .head__content {
+            width: 900px;
+            margin: auto;
+            padding: 6rem 5%;
+            
+            p {
+                font-size: 20px;
+                line-height: 40px;
+                padding: 0 15px;
+                //border-right: 2px solid $contact-border;
+                //border-left: 2px solid $contact-border;
+                margin-bottom: 65px;
+            }
+        }
+        
+        .head__title {
+            @include flex;
+            justify-content: space-between;
+            border-bottom: 2px solid $contact-border;
+            //border-left: 2px solid $contact-border;
+            padding-right: 10px;
+            padding-left: 8px;
+            margin-bottom: 55px;
+            
+            
+            h1 {
+                font-family: 'Ubuntu Mono', monospace;
+                font-size: 100px;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+                display: inline;
+            }
+            
+            img {
+                width: 79px;
+                height: 100%;
+                opacity: 0.87;
+                margin-top: 11px;
+            }
+        }
+        .head__about {
+            @include flex;
+            @include flex-column;
+            
+            img {
+                width: 300px;
+                height: 300px;
+                border: 3px solid #fa461e;
+                border-radius: 50%;
+            }
+        }
+        
+        .head__about--row {
+            @include flex;
+            @include flex-row;
+            margin-bottom: 40px;
+            //padding-right: 15px;
+            p {
+                
+            }
+        }
+    }
+
+    .section--bg-two {
+        background-color: #f2f2f2;
+    }
+}

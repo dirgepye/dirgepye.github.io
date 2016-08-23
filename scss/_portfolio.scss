@@ -1,0 +1,197 @@
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-row {
+    -webkit-flex-direction: row;
+    flex-direction: row;    
+}
+
+@mixin flex-column {
+    -webkit-flex-direction: column;
+    flex-direction: column;    
+}
+
+@mixin flex-row-reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;    
+}
+
+@mixin flex-column {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;    
+}
+
+$port-bg: #677487;
+$port-border: #434b56; 
+
+.section {
+    min-height: 700px;
+}
+#port-page {
+    background-color: #e4e4e4;
+    
+    .nav--port {
+        border: 3px solid $port-bg;
+        background-color: #efefef;
+        .hamburger {
+            div {
+                background: $port-bg;
+            }
+        }
+    }
+    
+    .nav-open--port {
+        background-color: #efefef;
+        border: 3px solid $port-bg;
+        
+        
+        ul {
+            
+            a {
+              background-color: transparent;
+              color: $port-bg;
+            }
+        }
+    }
+
+    .head {
+        background-color: $port-bg;
+        min-height: 100vh;
+        color: #efefef;
+    
+        .head__content {
+            width: 900px;
+            margin: auto;
+            padding: 10rem 5%;
+            
+            p {
+                font-size: 20px;
+                line-height: 40px;
+                padding-left: 10px;
+                border-left: 2px solid $port-border;
+            }
+        
+        }
+        
+        
+        
+        .head__title {
+            @include flex;
+            justify-content: space-between;
+            border-bottom: 2px solid $port-border;
+            border-right: 2px solid $port-border;
+            padding-right: 10px;
+            padding-left: 8px;
+            margin-bottom: 60px;
+            
+            
+            h1 {
+                font-family: 'Ubuntu Mono', monospace;
+                font-size: 100px;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+                display: inline;
+            }
+            
+            img {
+                width: 112px;
+                height: 100%;
+                opacity: 0.87;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .section--bg-two {
+        background-color: #f2f2f2;
+    }
+    
+}
+
+.proj {
+    @include flex;
+    @include flex-row;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8rem 8%;
+    
+    .left {
+        margin-right: 40px;
+    }
+    
+    .proj__img {
+        width: 42%;
+        
+        img {
+            width: 100%;
+        }
+    }
+    
+    .proj__details {
+        width: 55%;
+        color: #515151;
+        border-right: 2px solid $port-bg;
+        padding-right: 10px;
+        
+        
+        
+        h2 {
+            font-family: 'Ubuntu Mono', monospace;
+            font-size: 60px;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+            //display: inline;
+        }
+        h3 {
+            margin-bottom: 20px;
+        }
+        
+        p {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.proj__details.left {
+    border: 0;
+    border-left: 2px solid $port-bg;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.buttons {
+    @include flex;
+    @include flex-row;
+    
+    .proj-btn {
+        @include flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: $port-bg;
+        border: 2px solid $port-bg;
+        width: 128px;
+        height: 45px;
+        margin-right: 20px;
+        border-radius: 4px;
+        transition: background-color ease 0.5s;
+        -webkit-transition: background-color ease 0.5s;
+    
+        img {
+            margin-left: 8px;
+            width: 20px;
+        }
+    }
+    
+    .proj-btn:hover {
+        background-color: $port-border;
+    }
+    
+    
+}

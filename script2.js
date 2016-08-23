@@ -6,13 +6,13 @@ $(document).ready(function() {
 
         //for firefox
         
-        "-moz-animation-name":"rotatebox",
+        "-moz-animation-name":"rotatecircle",
         "-moz-animation-duration":"1s",
         "-moz-animation-iteration-count":"1",
             "-moz-animation-fill-mode":"forwards",
 
         //for safari & chrome
-        "-webkit-animation-name":"rotatebox",
+        "-webkit-animation-name":"rotatecircle",
         "-webkit-animation-duration":"1s",
         "-webkit-animation-iteration-count":"1",
         "-webkit-animation-fill-mode" : "forwards",
@@ -119,5 +119,7 @@ $(function(){
 	$("h3").lettering();
 })
 
-
+$(".nav").on('click', function(){
+	$(".nav-open").toggle();
+})
 

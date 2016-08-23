@@ -1,11 +1,63 @@
+
+@import 'portfolio.scss';
+@import 'about.scss';
+@import 'contact.scss';
 @import 'https://fonts.googleapis.com/css?family=Ubuntu+Mono';
 
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
 
-* {
-  font-family: 'Asap', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  
+@mixin flex-row {
+    -webkit-flex-direction: row;
+    flex-direction: row;    
+}
+
+@mixin flex-column {
+    -webkit-flex-direction: column;
+    flex-direction: column;    
+}
+
+@mixin flex-row-reverse {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;    
+}
+
+@mixin flex-column {
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;    
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: 'Asap', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+        
+html {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 #pie-holder {
@@ -72,17 +124,17 @@ svg {
   opacity: 0;
 }
 
-@-moz-keyframes rotatebox /*--for firefox--*/ {
+@-moz-keyframes rotatecircle /*--for firefox--*/ {
   from {
-    -moz-transform: rotate(18deg);
+    -moz-transform: rotate(35deg);
   }
   to {
     -moz-transform: rotate(0deg);
   }
 }
-@-webkit-keyframes rotatebox /*--for webkit--*/ {
+@-webkit-keyframes rotatecircle /*--for webkit--*/ {
   from {
-    -webkit-transform: rotate(18deg);
+    -webkit-transform: rotate(35deg);
   }
   to {
     -webkit-transform: rotate(0deg);
@@ -286,3 +338,67 @@ svg {
   opacity: 0;
 }
 
+.nav {
+  z-index: 10000;
+  position: fixed;
+  border: 3px solid #ccc;
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0 0 10px;
+  @include flex;
+  //@include flex-column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  .hamburger {
+    .hamburger-mid {
+      margin: 6px 0;
+    }
+    
+    div {
+      background-color: #ccc;
+      width: 35px;
+      height: 4px;
+      border-radius: 10%;
+      text-align: center;
+    }
+  }
+}
+
+
+.nav:hover {
+  opacity: 0.8;
+}
+.nav-open {
+  position: fixed;
+  border: 3px solid #ccc;
+  padding: 0 15px 0 70px;
+  margin: 10px 0 0 10px;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 5%;
+  border-top-left-radius: 20%;
+  display: none;
+  
+  ul {
+    list-style: none;
+    margin-top: 10px;
+    
+    li {
+      margin-bottom: 7px;
+      font-size: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #aaa; 
+      transition: text-decoration 0.5s;
+      -webkit-transition: text-decoration 0.5s;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

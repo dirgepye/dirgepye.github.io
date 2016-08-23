@@ -10,9 +10,23 @@
 </head>
 
 <body>
-
+	<div class="nav">
+		<div class="hamburger">
+			<div>&nbsp</div>
+			<div class="hamburger-mid">&nbsp</div>
+			<div>&nbsp</div>
+		</div>
+	</div>
+	<div class="nav-open">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
 	<div id="pie-holder">
-		
+
 		<div class="title-container about-container">
 			<h3 class="about-title">About</h3>
 		</div>
@@ -22,15 +36,11 @@
 		<div class="title-container work-container">
 			<h3 class="work-title">Work</h3>
 		</div>
-		
+
 	</div>
-	
+
 
 	<script>
-
-
-
-
 		var data = [{
 			label: "about",
 			value: 150,
@@ -59,10 +69,10 @@
 		var r = 310;
 
 		var color = d3.scaleOrdinal()
-			.range(["#F6C54F", "#677487", "#FA603C", "68FA8B"]);
+			.range(["#FA603C", "#677487", "#F6C54F", "68FA8B"]);
 
 		var butts = d3.scaleOrdinal()
-			.range(["about", "work", "contact" ]);
+			.range(["about", "work", "contact"]);
 
 		var canvas = d3.select("#pie-holder").append("svg")
 			.attr("width", 620)
@@ -96,12 +106,12 @@
 			.style("fill", function(d, i) {
 				return color(i);
 			})
-		
+
 		arcs.append("text")
 			.attr("dy", "0em")
 			.style("text-anchor", "middle")
 			.attr("class", "inner-circle")
-			.style("font-weight","700")
+			.style("font-weight", "700")
 			.attr("fill", "#555")
 			.text(function(d) {
 				return "Shawn Stenhouse";
@@ -124,19 +134,22 @@
 			.attr("xlink:href", function(d) {
 				return d.data.img;
 			})
-			.attr("width", function(d){
+			.attr("width", function(d) {
 				return d.data.width;
 			})
-			.attr("height", function(d){
+			.attr("height", function(d) {
 				return d.data.height;
 			})
-			.attr("x",function(d) {return -1*d.data.width/2;})
-    		.attr("y",function(d) {return -1*d.data.height/2;})
+			.attr("x", function(d) {
+				return -1 * d.data.width / 2;
+			})
+			.attr("y", function(d) {
+				return -1 * d.data.height / 2;
+			})
 			.attr("id", function(d) {
 				return d.data.id
 			})
 			.attr("class", "image_style")
-
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="jquery.lettering-0.6.1.min.js"></script>

@@ -1,8 +1,414 @@
 @import "https://fonts.googleapis.com/css?family=Ubuntu+Mono";
-* {
+.section {
+  min-height: 700px;
+}
+
+#port-page {
+  background-color: #e4e4e4;
+}
+#port-page .nav--port {
+  border: 3px solid #677487;
+  background-color: #efefef;
+}
+#port-page .nav--port .hamburger div {
+  background: #677487;
+}
+#port-page .nav-open--port {
+  background-color: #efefef;
+  border: 3px solid #677487;
+}
+#port-page .nav-open--port ul a {
+  background-color: transparent;
+  color: #677487;
+}
+#port-page .head {
+  background-color: #677487;
+  min-height: 100vh;
+  color: #efefef;
+}
+#port-page .head .head__content {
+  width: 900px;
+  margin: auto;
+  padding: 10rem 5%;
+}
+#port-page .head .head__content p {
+  font-size: 20px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-left: 2px solid #434b56;
+}
+#port-page .head .head__title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #434b56;
+  border-right: 2px solid #434b56;
+  padding-right: 10px;
+  padding-left: 8px;
+  margin-bottom: 60px;
+}
+#port-page .head .head__title h1 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  display: inline;
+}
+#port-page .head .head__title img {
+  width: 112px;
+  height: 100%;
+  opacity: 0.87;
+  margin-top: 20px;
+}
+#port-page .section--bg-two {
+  background-color: #f2f2f2;
+}
+
+.proj {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8rem 8%;
+}
+.proj .left {
+  margin-right: 40px;
+}
+.proj .proj__img {
+  width: 42%;
+}
+.proj .proj__img img {
+  width: 100%;
+}
+.proj .proj__details {
+  width: 55%;
+  color: #515151;
+  border-right: 2px solid #677487;
+  padding-right: 10px;
+}
+.proj .proj__details h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+}
+.proj .proj__details h3 {
+  margin-bottom: 20px;
+}
+.proj .proj__details p {
+  margin-bottom: 50px;
+}
+
+.proj__details.left {
+  border: 0;
+  border-left: 2px solid #677487;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.buttons .proj-btn {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #677487;
+  border: 2px solid #677487;
+  width: 128px;
+  height: 45px;
+  margin-right: 20px;
+  border-radius: 4px;
+  transition: background-color ease 0.5s;
+  -webkit-transition: background-color ease 0.5s;
+}
+.buttons .proj-btn img {
+  margin-left: 8px;
+  width: 20px;
+}
+.buttons .proj-btn:hover {
+  background-color: #434b56;
+}
+
+#about-page a {
+  background-color: #fa461e;
+  text-decoration: none;
+  color: #fff;
+}
+#about-page .nav--about {
+  border: 3px solid #FA603C;
+  background-color: #efefef;
+}
+#about-page .nav--about .hamburger div {
+  background-color: #FA603C;
+}
+#about-page .head {
+  background-color: #FA603C;
+  min-height: 100vh;
+  color: #efefef;
+}
+#about-page .head .head__content {
+  width: 900px;
+  margin: auto;
+  padding: 6rem 5%;
+}
+#about-page .head .head__content p {
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 15px;
+  border-right: 2px solid #fa461e;
+}
+#about-page .head .head__title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fa461e;
+  border-left: 2px solid #fa461e;
+  padding-right: 10px;
+  padding-left: 8px;
+  margin-bottom: 60px;
+}
+#about-page .head .head__title h1 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  display: inline;
+}
+#about-page .head .head__title img {
+  width: 100px;
+  height: 100%;
+  opacity: 0.87;
+  margin-top: 6px;
+}
+#about-page .head .head__about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+#about-page .head .head__about img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #fa461e;
+  border-radius: 50%;
+}
+#about-page .head .head__about--row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+#about-page .section--bg-two {
+  background-color: #f2f2f2;
+}
+#about-page .nav-open--about {
+  background-color: #efefef;
+  border: 3px solid #FA603C;
+  color: #FA603C;
+}
+#about-page .nav-open--about ul a {
+  background-color: transparent;
+  color: #FA603C;
+}
+
+.contact-page .nav--contact {
+  border: 3px solid #F6C54F;
+  background-color: #efefef;
+}
+.contact-page .nav--contact .hamburger div {
+  background-color: #F6C54F;
+}
+.contact-page .nav-open--contact {
+  background-color: #efefef;
+  border: 3px solid #F6C54F;
+}
+.contact-page .nav-open--contact ul a {
+  background-color: transparent;
+  color: #F6C54F;
+}
+.contact-page form {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px 15px;
+  margin: auto;
+  border-right: 2px solid #f4b625;
+}
+.contact-page form * {
+  outline: none;
+}
+.contact-page form input {
+  font-size: 20px;
+  color: #777;
+  padding: 5px;
+  width: 49%;
+}
+.contact-page form input:nth-child(1) {
+  margin-right: 10px;
+}
+.contact-page form * {
+  border: none;
+}
+.contact-page form .form__info {
+  margin-bottom: 20px;
+}
+.contact-page form textarea {
+  font-size: 20px;
+  color: #777;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 5px;
+  resize: none;
+}
+.contact-page form input[type=submit] {
+  width: 90px;
+  height: 40px;
+  color: #fff;
+  background-color: #f4b625;
+  border: 2px solid #f4b625;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+.contact-page form input[type=submit]:hover {
+  background-color: #F6C54F;
+}
+.contact-page a {
+  text-decoration: none;
+  background-color: #f4b625;
+  color: #fff;
+}
+.contact-page .head {
+  background-color: #F6C54F;
+  min-height: 100vh;
+  color: #efefef;
+}
+.contact-page .head .head__content {
+  width: 900px;
+  margin: auto;
+  padding: 6rem 5%;
+}
+.contact-page .head .head__content p {
+  font-size: 20px;
+  line-height: 40px;
+  padding: 0 15px;
+  margin-bottom: 65px;
+}
+.contact-page .head .head__title {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #f4b625;
+  padding-right: 10px;
+  padding-left: 8px;
+  margin-bottom: 55px;
+}
+.contact-page .head .head__title h1 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  display: inline;
+}
+.contact-page .head .head__title img {
+  width: 79px;
+  height: 100%;
+  opacity: 0.87;
+  margin-top: 11px;
+}
+.contact-page .head .head__about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.contact-page .head .head__about img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #fa461e;
+  border-radius: 50%;
+}
+.contact-page .head .head__about--row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+.contact-page .section--bg-two {
+  background-color: #f2f2f2;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
   font-family: 'Asap', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 #pie-holder {
@@ -66,17 +472,17 @@ svg {
   opacity: 0;
 }
 
-@-moz-keyframes rotatebox /*--for firefox--*/ {
+@-moz-keyframes rotatecircle /*--for firefox--*/ {
   from {
-    -moz-transform: rotate(18deg);
+    -moz-transform: rotate(35deg);
   }
   to {
     -moz-transform: rotate(0deg);
   }
 }
-@-webkit-keyframes rotatebox /*--for webkit--*/ {
+@-webkit-keyframes rotatecircle /*--for webkit--*/ {
   from {
-    -webkit-transform: rotate(18deg);
+    -webkit-transform: rotate(35deg);
   }
   to {
     -webkit-transform: rotate(0deg);
@@ -263,14 +669,66 @@ svg {
   opacity: 0;
 }
 
-.farts {
-  position: absolute;
-  z-index: 9999999999;
-  width: 100%;
-  height: 100%;
-  background-color: blue;
-  margin: 0;
-  font-size: 0;
+.nav {
+  z-index: 10000;
+  position: fixed;
+  border: 3px solid #ccc;
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0 0 10px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav .hamburger .hamburger-mid {
+  margin: 6px 0;
+}
+.nav .hamburger div {
+  background-color: #ccc;
+  width: 35px;
+  height: 4px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.nav:hover {
+  opacity: 0.8;
+}
+
+.nav-open {
+  position: fixed;
+  border: 3px solid #ccc;
+  padding: 0 15px 0 70px;
+  margin: 10px 0 0 10px;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 5%;
+  border-top-left-radius: 20%;
+  display: none;
+}
+.nav-open ul {
+  list-style: none;
+  margin-top: 10px;
+}
+.nav-open ul li {
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+.nav-open ul a {
+  text-decoration: none;
+  color: #aaa;
+  transition: text-decoration 0.5s;
+  -webkit-transition: text-decoration 0.5s;
+}
+.nav-open ul a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style2.css.map */
