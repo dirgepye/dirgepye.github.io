@@ -60,7 +60,7 @@ a {
   text-decoration: none;
 }
 
-#pie-holder {
+#wheel-holder {
   position: relative;
   width: 610px;
   height: 610px;
@@ -141,6 +141,22 @@ svg {
   }
 }
 
+@-moz-keyframes leavehome {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(-35deg);
+  }
+}
+@-webkit-keyframes leavehome {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-35deg);
+  }
+}
 .title-container {
     position: absolute;
     width: 40px;

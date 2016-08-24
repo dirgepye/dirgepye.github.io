@@ -3,46 +3,59 @@ $(document).ready(function() {
 	console.log("farts");
 
 	$('svg').css({
-
-        //for firefox
-        
         "-moz-animation-name":"rotatecircle",
         "-moz-animation-duration":"1s",
         "-moz-animation-iteration-count":"1",
             "-moz-animation-fill-mode":"forwards",
 
-        //for safari & chrome
         "-webkit-animation-name":"rotatecircle",
         "-webkit-animation-duration":"1s",
         "-webkit-animation-iteration-count":"1",
         "-webkit-animation-fill-mode" : "forwards",
 	});
 	
-	$(".about-title").find(".char1").css({"color":"green"
-	// "-webkit-animation-name":"aboutChar1",
- //       "-webkit-animation-duration":"1s",
- //       "-webkit-animation-iteration-count":"1",
- //       "-webkit-animation-fill-mode" : "forwards",
-	})	
-
-
 	$('svg').animate({opacity:"1"}, 1000)
+	
+	// $(".about-title").find(".char1").css({"color":"green"})	
 
-	$('.arc').click(function(){
-		console.log("toots")
-	})
-
+	function leaveHome() {
+		$('svg').css({
+			"-moz-animation-name":"leavehome",
+		    "-moz-animation-duration":"1s",
+		    "-moz-animation-iteration-count":"1",
+		    "-moz-animation-fill-mode":"forwards",
+		
+		    "-webkit-animation-name":"leavehome",
+		    "-webkit-animation-duration":"1s",
+		    "-webkit-animation-iteration-count":"1",
+		    "-webkit-animation-fill-mode" : "forwards",
+		})
+		$('svg').animate({opacity:"0"}, 900)
+	}
+	
+	
 	$('#about').click(function(){
-		console.log("about")
+		setTimeout(function() {
+            window.location = "about.html";
+        }, 1000);
+        leaveHome()
+        return false;
 	})
 	
-
 	$('#contact').click(function(){
-		console.log("contact")
+		setTimeout(function() {
+            window.location = "contact.html";
+        }, 1000);
+        leaveHome()
+        return false;
 	})
 
 	$('#work').click(function(){
-		console.log("work")
+		setTimeout(function() {
+            window.location = "portfolio.html";
+        }, 1000);
+        leaveHome()
+        return false;
 	})
 	
 	//WORK TITLE ANIMATIONS

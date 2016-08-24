@@ -139,8 +139,8 @@
   height: 45px;
   margin-right: 20px;
   border-radius: 4px;
-  transition: background-color ease 0.5s;
-  -webkit-transition: background-color ease 0.5s;
+  transition: background-color ease 0.4s;
+  -webkit-transition: background-color ease 0.4s;
 }
 .buttons .proj-btn img {
   margin-left: 8px;
@@ -411,7 +411,7 @@ a {
   text-decoration: none;
 }
 
-#pie-holder {
+#wheel-holder {
   position: relative;
   width: 610px;
   height: 610px;
@@ -486,6 +486,22 @@ svg {
   }
   to {
     -webkit-transform: rotate(0deg);
+  }
+}
+@-moz-keyframes leavehome {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(-35deg);
+  }
+}
+@-webkit-keyframes leavehome {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-35deg);
   }
 }
 .title-container {
