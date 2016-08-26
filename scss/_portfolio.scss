@@ -111,6 +111,11 @@ $port-border: #434b56;
         background-color: #f2f2f2;
     }
     
+    .section--bg-three {
+        // background-color: #b7bdc8;
+        background-color: #d3d8de;
+    }
+    
 }
 
 .proj {
@@ -125,10 +130,12 @@ $port-border: #434b56;
     }
     
     .proj__img {
-        width: 42%;
+        width: 45%;
         
         img {
             width: 100%;
+            border: 5px solid rgba(0,0,0,0.05);
+            
         }
     }
     
@@ -195,3 +202,5 @@ $port-border: #434b56;
     
     
 }
+
+

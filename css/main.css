@@ -204,6 +204,7 @@ input[type=text]:focus, .form-b--signup input[type=submit]:focus {
   padding: 0; }
 
 .main__head {
+  /*display: none;*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -224,7 +225,7 @@ input[type=text]:focus, .form-b--signup input[type=submit]:focus {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  opacity: 1; }
+  opacity: 0; }
 
 #shawn {
   position: relative;

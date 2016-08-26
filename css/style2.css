@@ -66,6 +66,9 @@
 #port-page .section--bg-two {
   background-color: #f2f2f2;
 }
+#port-page .section--bg-three {
+  background-color: #d3d8de;
+}
 
 .proj {
   display: -webkit-box;
@@ -83,10 +86,11 @@
   margin-right: 40px;
 }
 .proj .proj__img {
-  width: 42%;
+  width: 45%;
 }
 .proj .proj__img img {
   width: 100%;
+  border: 5px solid rgba(0, 0, 0, 0.05);
 }
 .proj .proj__details {
   width: 55%;
