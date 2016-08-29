@@ -3,6 +3,20 @@
   min-height: 700px;
 }
 
+.section--split .proj--split {
+  width: 49.5%;
+  height: 100vh;
+  display: inline-block;
+  padding: 6rem 8%;
+}
+.section--split .proj--split .proj__details {
+  width: 100%;
+  border: none;
+}
+.section--split .proj--split .proj__details h2 {
+  border-bottom: 2px solid #677487;
+}
+
 #port-page {
   background-color: #e4e4e4;
 }

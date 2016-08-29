@@ -32,6 +32,27 @@ $port-border: #434b56;
 .section {
     min-height: 700px;
 }
+
+.section--split {
+        
+        .proj--split {
+            width: 49.5%;
+            height: 100vh;
+            display: inline-block;
+            padding: 6rem 8%; 
+            
+            .proj__details {
+                width: 100%;  
+                border: none;
+                
+                h2 {
+                    border-bottom: 2px solid $port-bg;
+                }
+                
+            }
+        }
+    }
+
 #port-page {
     background-color: #e4e4e4;
     
@@ -202,5 +223,8 @@ $port-border: #434b56;
     
     
 }
+
+
+
 
 
