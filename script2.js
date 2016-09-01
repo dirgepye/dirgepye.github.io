@@ -14,8 +14,6 @@ $(document).ready(function() {
         "-webkit-animation-fill-mode" : "forwards",
 	});
 	
-	animation: dash 15s linear indefinite;
-	
 	$('svg').animate({opacity:"1"}, 1000)
 	
 	// $(".about-title").find(".char1").css({"color":"green"})	
