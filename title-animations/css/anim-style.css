@@ -12,9 +12,11 @@ body {
 
 #header {
     width: 100%;
-    height: 40px;
+    /*height: 40px;*/
     text-align: center;
+    z-index: 10000;
     position: fixed;
+    background-color: #131b20;
 }
 
 #anim-selector {
@@ -39,6 +41,11 @@ body {
     font-size: 15px;
     color: #ccc;
     margin: 0 15px;
+    cursor: pointer;
+}
+
+.anim-btn:hover {
+  background-color: #4e6a7e;
 }
 
 .anim-btn, p {
@@ -108,24 +115,28 @@ img {
   
 
 .anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 100vw;
   height: 100vh;
   left: -10000px;
+  
 }
   
   
-#anim__one {
-  background-color: orange;
-}
+/*#anim__one {*/
+/*  background-color: orange;*/
+/*}*/
 
-#anim__two {
-  background-color: blue;
-}
+/*#anim__two {*/
+/*  background-color: blue;*/
+/*}*/
   
-#anim__three {
-  background-color: green;
-}
+/*#anim__three {*/
+/*  background-color: green;*/
+/*}*/
   
 /*path one 2013.522705078125*/
 /*animation.js:123 path two 859.215576171875*/
