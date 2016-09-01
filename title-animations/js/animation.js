@@ -1,8 +1,18 @@
-var isOpen = false
+$(document).ready(function(){
+    console.log("suck it")
+})
+
+var isOpen = false;
+var twoIsOpen = false;
+var threeIsOpen =false;
+
+var animOne = document.getElementById("anim__one");
+var animTwo = document.getElementById("anim__two");
+var animThree = document.getElementById("anim__three");
 
 $(document).ready(function() {
     $('a').click(function() {
-        undo();
+        animOneFunctionRev();
         console.log("heck yeah")
         var href = $(this).attr('href');
 
@@ -17,7 +27,7 @@ $(document).ready(function() {
 });
 
 // document.addEventListener("DOMContentLoaded", function(event) {
-//     titleFunction();
+//     animOneFunction();
 // });
 
 
@@ -52,12 +62,12 @@ console.log(aboutRight)
 console.log(aboutLeft)
 
 //document.onload=function(){title};
-//document.addEventListener("load", titleFunction);
+//document.addEventListener("load", animOneFunction);
 
 
 
-function titleFunction() {
-    console.log("fdsafw")
+function animOneFunction() {
+    
     isOpen = true
     TweenLite.to(shawn, 1.5, {
         opacity: 1,
@@ -113,6 +123,18 @@ function titleFunction() {
 
 }
 
+//FIND TOTAL LENGTH
+
+// var path = document.querySelector('.path');
+// var length = path.getTotalLength();
+// var pathTwo = document.querySelector('.path-two');
+// var lengthTwo = pathTwo.getTotalLength();
+// var pathThree = document.querySelector('.path-three');
+// var lengthThree = pathThree.getTotalLength();
+// console.log("path one " + length)
+// console.log("path two " + lengthTwo)
+// console.log("path three " + lengthThree)
+
 
 //TweenLite.to(links, 10, {visibility: "visible"})
 // TweenLite.to(sten, 1.5, {bottom: 10});
@@ -144,7 +166,7 @@ function titleFunction() {
 
 // }
 
-function undo() {
+function animOneFunctionRev() {
     var isOpen = false;
     TweenLite.to(shawn, 1.5, {
         opacity: 0,
@@ -202,19 +224,162 @@ function undo() {
 
 
 document.getElementById("anim-one").addEventListener("click", function(){
-    if (isOpen == true) {
-        undo();
-        isOpen = false;
+    
+    if (twoIsOpen == true) {
+        animTwo.style.left = "-10000px";
+        twoIsOpen = false;
+        animOne.style.left="0";
+        animOneFunction();
+        animTwoFunctionRev();
+        isOpen = true;
     }
-    else {
-        titleFunction();
+    
+    
+    else if (threeIsOpen == true) {
+        animThree.style.left = "-10000px"
+        threeIsOpen = false;
+        animOne.style.left = "0"
+        animOneFunction();
+        isOpen = true;
+    }
+    else if (isOpen == true) {
+        animOneFunctionRev();
+        isOpen = false;
         
     }
+    else {
+        
+        animOne.style.left = "0";
+        isOpen = true;
+        animOneFunction();
+        
+    }
+    console.log("one = " + isOpen)
+    console.log("two = " + twoIsOpen)
 })
 
-$(".anim-two").click(function(){
-    // titleFunction();
+
+//ANIMATION TWO 
+function animTwoFunction() {
     
-})
+    
+    $("#path-one").css({
+       "-moz-animation-name":"dash",
+       "-moz-animation-duration":"15s",
+       "-moz-animation-iteration-count":"1",
+       "-moz-animation-fill-mode":"forwards",
+       
+       "-webkit-animation-name":"dash",
+       "-webkit-animation-duration":"15s",
+       "-webkit-animation-iteration-count":"1",
+       "-webkit-animation-fill-mode":"forwards"
+       
+    });
+    
+    $("#path-two").css({
+       "-moz-animation-name":"dash-two",
+       "-moz-animation-duration":"15s",
+       "-moz-animation-iteration-count":"1",
+       "-moz-animation-fill-mode":"forwards",
+       
+       "-webkit-animation-name":"dash-two",
+       "-webkit-animation-duration":"15s",
+       "-webkit-animation-iteration-count":"1",
+       "-webkit-animation-fill-mode":"forwards"
+       
+    });
+    
+    $("#path-three").css({
+       "-moz-animation-name":"dash-three",
+       "-moz-animation-duration":"15s",
+       "-moz-animation-iteration-count":"1",
+       "-moz-animation-fill-mode":"forwards",
+       
+       "-webkit-animation-name":"dash-three",
+       "-webkit-animation-duration":"15s",
+       "-webkit-animation-iteration-count":"1",
+       "-webkit-animation-fill-mode":"forwards"
+       
+    });
+}
+
+function animTwoFunctionRev() {
+    var pathOne = document.getElementById("path-one");
+    
+    $("#path-one").css({
+       "-moz-animation-name":"rev-dash",
+       "-moz-animation-duration":"2s",
+       "-moz-animation-iteration-count":"1",
+       "-moz-animation-fill-mode":"forwards",
+       
+       "-webkit-animation-name":"rev-dash",
+       "-webkit-animation-duration":"2s",
+       "-webkit-animation-iteration-count":"1",
+       "-webkit-animation-fill-mode":"forwards"
+       
+    });
+    
+    $("#path-two").css({
+       "-moz-animation-name":"rev-dash-two",
+       "-moz-animation-duration":"2s",
+       "-moz-animation-iteration-count":"1",
+       "-moz-animation-fill-mode":"forwards",
+       
+       "-webkit-animation-name":"rev-dash-two",
+       "-webkit-animation-duration":"2s",
+       "-webkit-animation-iteration-count":"1",
+       "-webkit-animation-fill-mode":"forwards"
+       
+    });
+    
+    $("#path-three").css({
+       "-moz-animation-name":"rev-dash-three",
+       "-moz-animation-duration":"2s",
+       "-moz-animation-iteration-count":"1",
+       "-moz-animation-fill-mode":"forwards",
+       
+       "-webkit-animation-name":"rev-dash-three",
+       "-webkit-animation-duration":"2s",
+       "-webkit-animation-iteration-count":"1",
+       "-webkit-animation-fill-mode":"forwards"
+       
+    });
+}
+
+
+document.getElementById("anim-two").addEventListener("click", function(){
+
+    if (isOpen == true) {
+        animOne.style.left = "-10000px";
+        isOpen = false;
+        animTwo.style.left = "0" //Throw these into the functions?
+        animOneFunctionRev();
+        animTwoFunction();
+        twoIsOpen = true;
+    }
+    else if (threeIsOpen == true) {
+        animThree.style.left = "-10000px";
+        threeIsOpen = false;
+        animTwo.style.left = "0"; //Throw these into the functions?
+        
+        animTwoFunction();
+        twoIsOpen = true;
+    }
+    else if (twoIsOpen == true) {
+        animTwoFunctionRev();
+        twoIsOpen = false;
+        
+    }
+    else {
+        animOne.style.left = "-10000px";
+        animTwo.style.left = "0";
+        twoIsOpen = true;
+        animTwoFunction();
+        
+    }
+        console.log("one = " + isOpen)
+    console.log("two = " + twoIsOpen)
+});
+
 
 

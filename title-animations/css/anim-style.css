@@ -81,7 +81,7 @@ h1 {
 #shawn {
   position: relative;
   right: 55px;
-  bottom: 50px;
+  bottom: 80px;
   opacity: 0; }
 
 #sten {
@@ -105,3 +105,103 @@ img {
   right: -65px;
   bottom: -50px;
   opacity: 0; }
+  
+
+.anim {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: -10000px;
+}
+  
+  
+#anim__one {
+  background-color: orange;
+}
+
+#anim__two {
+  background-color: blue;
+}
+  
+#anim__three {
+  background-color: green;
+}
+  
+/*path one 2013.522705078125*/
+/*animation.js:123 path two 859.215576171875*/
+/*animation.js:124 path three 2693.48974609375*/
+  
+#path-one {
+  stroke-dasharray: 2013.522705078125;
+  stroke-dashoffset: 2013.522705078125;
+  /*animation: dash 15s linear forwards;*/
+  animation: dash 15s linear indefinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 2013.522705078125;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rev-dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 2013.522705078125;
+  }
+}
+
+
+#path-two {
+  stroke-dasharray: 859.215576171875;
+  stroke-dashoffset: 859.215576171875;
+  animation: dash-two 15s linear indefinite;
+}
+
+@keyframes dash-two {
+  from {
+    stroke-dashoffset: 859.215576171875;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rev-dash-two {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 859.215576171875;
+  }
+}
+
+
+#path-three {
+  stroke-dasharray: 2693.48974609375;
+  stroke-dashoffset: 2693.48974609375;
+  animation: dash-three 15s linear indefinite;
+}
+
+@keyframes dash-three {
+  from {
+    stroke-dashoffset: 2693.48974609375;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes rev-dash-three {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 2693.48974609375;
+  }
+}
