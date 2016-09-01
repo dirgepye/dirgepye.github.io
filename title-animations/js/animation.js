@@ -383,3 +383,6 @@ document.getElementById("anim-two").addEventListener("click", function(){
 
 
 
+document.getElementById("anim-three").addEventListener("click", function(){
+    alert("not yet available. sorry :(")
+})
