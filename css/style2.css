@@ -3,6 +3,9 @@
   min-height: 700px;
 }
 
+.section--split {
+  display: flex;
+}
 .section--split .proj--split {
   width: 49.5%;
   height: 100vh;
@@ -39,6 +42,11 @@
   background-color: #677487;
   min-height: 100vh;
   color: #efefef;
+}
+#port-page .head a {
+  background-color: #434b56;
+  text-decoration: none;
+  color: #fff;
 }
 #port-page .head .head__content {
   width: 900px;
@@ -123,7 +131,7 @@
   margin-bottom: 20px;
 }
 .proj .proj__details p {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .proj__details.left {
@@ -141,6 +149,7 @@
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
+  margin-top: 40px;
 }
 .buttons .proj-btn {
   display: -webkit-box;
@@ -400,6 +409,10 @@
 }
 .contact-page .section--bg-two {
   background-color: #f2f2f2;
+}
+
+#form1 {
+  background-color: orange;
 }
 
 *,

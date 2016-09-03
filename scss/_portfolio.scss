@@ -34,6 +34,7 @@ $port-border: #434b56;
 }
 
 .section--split {
+    display: flex;
         
         .proj--split {
             width: 49.5%;
@@ -54,7 +55,10 @@ $port-border: #434b56;
     }
 
 #port-page {
+
     background-color: #e4e4e4;
+    
+
     
     .nav--port {
         border: 3px solid $port-bg;
@@ -85,6 +89,12 @@ $port-border: #434b56;
         min-height: 100vh;
         color: #efefef;
     
+        a {
+            background-color: $port-border;
+            text-decoration: none;
+            color: #fff;
+        }
+        
         .head__content {
             width: 900px;
             margin: auto;
@@ -181,7 +191,7 @@ $port-border: #434b56;
         }
         
         p {
-            margin-bottom: 50px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -196,6 +206,7 @@ $port-border: #434b56;
 .buttons {
     @include flex;
     @include flex-row;
+    margin-top: 40px;
     
     .proj-btn {
         @include flex;

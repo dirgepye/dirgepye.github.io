@@ -11,59 +11,62 @@
 
 <body class="contact-page">
     <div class="nav nav--contact">
-		<div class="hamburger">
-			<div>&nbsp</div>
-			<div class="hamburger-mid">&nbsp</div>
-			<div>&nbsp</div>
-		</div>
-	</div>
-	<div class="nav-open nav-open--contact">
-		<ul>
-			<li><a href="http://dirgepye.github.io/">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
+        <div class="hamburger">
+            <div>&nbsp</div>
+            <div class="hamburger-mid">&nbsp</div>
+            <div>&nbsp</div>
+        </div>
+    </div>
+    <div class="nav-open nav-open--contact">
+        <ul>
+            <li><a href="http://dirgepye.github.io/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
     <div class="head">
         <div class="head__content">
             <div class="head__title">
                 <h1>Contact</h1>
                 <img src="images/contact2.png">
             </div>
-            <p>Did you like what you saw here? If so, get in touch below. If you like to live by your own rules and came here before looking at the rest of the site, make your way over to my <a href="portfolio.html">Portfolio</a>, and then come back here to get in touch!</a>
+            <p>Did you like what you saw here? If so, get in touch below. If you like to live by your own rules and came here before looking at the rest of the site, make your way over to my <a href="portfolio.html">Portfolio</a>, and then come back here
+                to get in touch!
             </p>
+            <p>I had a nifty form and everything but it isn't compatible with GitHub. So until I get that sorted out, you can <a href="mailto:s.webhouse@gmail.com">e-mail me</a> or send me a message via <a href="https://www.linkedin.com/in/sstenhouse">LinkedIn!</a></p>
+            
             <div class="head__contact">
                 <div class="head__contact--row">
-                    <form method="POST" name="contactform" action="contact-form-handler.php">
-                        <!--<div class="form__info">-->
+                
+
+                    <!-- <form method="POST" name="contactform" action="contact-form-handler.php">
+                    <div class="form__info">
                             <input type="text" name="name" placeholder="Your Name"> 
                             <input type="text" name="email" placeholder="Your E-mail">
-                        <!--</div>-->
-                        <!--<div class="form__message">-->
+                    </div>
+                    <div class="form__message">
                             <textarea name="message" placeholder="Your Message"></textarea>
-                        <!--</div>-->
+                    </div>
 
                         <input type="submit" value="Submit">
-                    </form>
+                    </form>-->
                 </div>
             </div>
         </div>
     </div>
     
-    
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!--<script src="jquery.lettering-0.6.1.min.js"></script>-->
-	
-	<script src="js/script.js"></script>
-	<script language="JavaScript">
-        var frmvalidator  = new Validator("contactform");
-        frmvalidator.addValidation("name","req","Please provide your name");
-        frmvalidator.addValidation("email","req","Please provide your email");
-        frmvalidator.addValidation("email","email",
-        "Please enter a valid email address");
-    </script> 
+    <!--<script src="jquery.lettering-0.6.1.min.js"></script>-->
+
+    <script src="js/script.js"></script>
+    <!-- <script language="JavaScript">
+        var frmvalidator = new Validator("contactform");
+        frmvalidator.addValidation("name", "req", "Please provide your name");
+        frmvalidator.addValidation("email", "req", "Please provide your email");
+        frmvalidator.addValidation("email", "email",
+            "Please enter a valid email address");
+    </script>-->
 </body>
 
 </html>
