@@ -99,8 +99,9 @@ text.inner-circle-sub {
 
 #about-icon {
   opacity: 0.45;
-  transform-origin: center;
   transform: rotate(300deg);
+  /* Firefox transform */
+  
   
 }
 
@@ -110,8 +111,10 @@ text.inner-circle-sub {
 
 #contact-icon {
   opacity: 0.45;
-  transform-origin: center;
-  transform: rotate(59deg)
+  
+  transform: rotate(59deg);
+  /*firefox trans*/
+  
 }
 
 
@@ -167,6 +170,7 @@ svg {
     top: 4px;
     font-size: 0;
     transform-origin: bottom center;
+    -moz-transform-origin: bottom center;
     //border: 1px solid black;
 
   	h3 {
@@ -193,6 +197,8 @@ svg {
       left: 5px;
       transform-origin: bottom center;
       text-transform: uppercase;
+      /*moz trans*/
+      -moz-transform-origin: bottom center;
 	  }
 }
 
@@ -311,6 +317,7 @@ svg {
 
 
 .about-title {
+  
   margin: 0;  
 
   //.char1 {transform: rotate();}

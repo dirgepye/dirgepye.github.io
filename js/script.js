@@ -66,6 +66,11 @@ $(document).ready(function() {
         	"-webkit-animation-duration":"0.5s",
         	"-webkit-animation-iteration-count":"1",
         	"-webkit-animation-fill-mode" : "forwards",
+        	
+        	"-moz-animation-name":"rotatework",
+        	"-moz-animation-duration":"0.5s",
+        	"-moz-animation-iteration-count":"1",
+        	"-moz-animation-fill-mode" : "forwards",
 		});
 		$(".work-container").stop().animate({"opacity":"1"},500)
 	});
@@ -75,6 +80,11 @@ $(document).ready(function() {
         	"-webkit-animation-duration":"0.5s",
         	"-webkit-animation-iteration-count":"1",
         	"-webkit-animation-fill-mode" : "forwards",
+        	
+        	"-moz-animation-name":"unrotatework",
+        	"-moz-animation-duration":"0.5s",
+        	"-moz-animation-iteration-count":"1",
+        	"-moz-animation-fill-mode" : "forwards",
 		})
 		$(".work-container").stop().animate({
 			"opacity":"0"
@@ -89,6 +99,11 @@ $(document).ready(function() {
         	"-webkit-animation-duration":"0.5s",
         	"-webkit-animation-iteration-count":"1",
         	"-webkit-animation-fill-mode" : "forwards",
+        	
+        	"-moz-animation-name":"rotatecontact",
+        	"-moz-animation-duration":"0.5s",
+        	"-moz-animation-iteration-count":"1",
+        	"-moz-animation-fill-mode" : "forwards",
 		});
 		$(".contact-container").stop().animate({"opacity":"1"},500)
 	});
@@ -98,6 +113,11 @@ $(document).ready(function() {
         	"-webkit-animation-duration":"0.5s",
         	"-webkit-animation-iteration-count":"1",
         	"-webkit-animation-fill-mode" : "forwards",
+        	
+        	"-moz-animation-name":"unrotatecontact",
+        	"-moz-animation-duration":"0.5s",
+        	"-moz-animation-iteration-count":"1",
+        	"-moz-animation-fill-mode" : "forwards",
 		})
 		$(".contact-container").stop().animate({
 			"opacity":"0"
@@ -112,6 +132,11 @@ $(document).ready(function() {
         	"-webkit-animation-duration":"0.5s",
         	"-webkit-animation-iteration-count":"1",
         	"-webkit-animation-fill-mode" : "forwards",
+        	
+        	"-moz-animation-name":"rotateabout",
+        	"-moz-animation-duration":"0.5s",
+        	"-moz-animation-iteration-count":"1",
+        	"-moz-animation-fill-mode" : "forwards",
 		});
 		$(".about-container").stop().animate({"opacity":"1"},500)
 	});
@@ -121,6 +146,11 @@ $(document).ready(function() {
         	"-webkit-animation-duration":"0.5s",
         	"-webkit-animation-iteration-count":"1",
         	"-webkit-animation-fill-mode" : "forwards",
+        	
+        	"-moz-animation-name":"unrotateabout",
+        	"-moz-animation-duration":"0.5s",
+        	"-moz-animation-iteration-count":"1",
+        	"-moz-animation-fill-mode" : "forwards",
 		})
 		$(".about-container").stop().animate({
 			"opacity":"0"
